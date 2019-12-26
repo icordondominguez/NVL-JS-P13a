@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Numeros primos</title>
+	<script type="text/javascript">
+
+		var numero = prompt("Introduce un valor y te mostraré los numeros primos hasta ese numero");
+		var primos = [];
+
+		for (var i = 2; i < numero; i++) {
+			if(esprimo(i))
+				primos.push(i);
+		}
+
+		document.write("Los numeros primos entre el 0 y " + numero + " son: " + primos);
+
+		function esprimo(numero)
+		{
+			for(var i = 2; i < numero; i ++)
+			{
+				if(numero % i == 0)
+					return false;
+				else
+					return true;
+			}
+		}
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
